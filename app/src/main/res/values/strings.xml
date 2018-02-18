@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IceHotel</string>
+    <string name="phone">+40 726 234 417</string>
+    <string name="website">www.hotelofice.com</string>
+    <string name="Address">Zăpezi St., nr. 1, Transfăgărășan,</string>
+    <string name="Address2">Sibiu, România</string>
+    <string name="info">Set at 2000 m above sea level, Balea Ice Hotel is located by Bâlea Lake,
+        in the Făgăraş Mountains. All spaces are made by local craftsmen using ice blocks from the lake.</string>
+    <string name="title">Bâlea Ice Hotel</string>
+</resources>

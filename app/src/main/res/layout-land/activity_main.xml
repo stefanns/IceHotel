@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.android.icehotel.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title" />
+
+    <ImageView
+        android:id="@+id/hotel_image"
+        style="@style/image"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/title"
+        android:adjustViewBounds="true"
+        android:src="@drawable/main" />
+
+    <LinearLayout
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="@dimen/top_landscape"
+        android:layout_toRightOf="@id/hotel_image">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5" />
+
+        <TextView
+            style="@style/text_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="@string/info" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/information"
+        android:layout_marginTop="@dimen/margin_rows"
+        android:layout_toRightOf="@id/hotel_image">
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/location" />
+
+        <TextView
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="@string/Address" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/address2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_toRightOf="@id/hotel_image">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5" />
+
+        <TextView
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="@string/Address2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address2"
+        android:layout_marginTop="@dimen/margin_rows"
+        android:layout_toRightOf="@id/hotel_image">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/phone" />
+
+        <TextView
+            style="@style/text_link"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:autoLink="phone"
+            android:text="@string/phone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_number"
+        android:layout_marginTop="@dimen/margin_rows"
+        android:layout_toRightOf="@id/hotel_image">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web" />
+
+        <TextView
+            style="@style/text_link"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:autoLink="web|phone|email"
+            android:text="@string/website" />
+    </LinearLayout>
+
+</RelativeLayout>
